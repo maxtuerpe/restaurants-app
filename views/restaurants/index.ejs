@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hey it's some restaurants!</h1>
+
+    <a href="/">Eat In Instead (Loser)</a>
+    <ul>
+        <% for(let i = 0; i < restaurants.length; i++) { %>
+            <li>
+                <a href="/restaurants/<%=restaurants[i]._id%>"><%=restaurants[i].name%></a>
+            </li>
+        <% } %>
+    </ul>
+    <nav>
+        <a href="restaurants/new">Establish a restaurant</a>
+    </nav>
+</body>
+</html>

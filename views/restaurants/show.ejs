@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1><%=restaurant.name%></h1>
+    <h3><%=restaurant.slogan%></h3>
+    <form action="/restaurants/<%=restaurant._id%>?_method=DELETE" method="POST">
+        <input type="submit" value="It didn't fit the mold"/>
+    </form>
+    <nav>
+
+        <a href="/restaurants">restaurants index</a>
+        <a href="/">home</a>
+        
+        <a href = "<%=restaurant.id%>/edit">Edit this here establishment</a>
+    </nav>
+    
+</body>
+</html>
